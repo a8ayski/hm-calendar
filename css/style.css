@@ -188,9 +188,13 @@ button {
 }
 .products__item-price {
   margin-bottom: 12px;
+  font-size: 16px;
+  font-family: 'Yeseva One', serif;
 }
 .products__item-title {
   margin-bottom: 16px;
+  font-size: 16px;
+  font-family: 'Yeseva One', serif;
 }
 .products__item-text {
   margin-bottom: 27px;

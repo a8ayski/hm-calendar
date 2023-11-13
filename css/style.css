@@ -31,9 +31,38 @@ button {
 .title {
   margin-bottom: 15px;
   font-size: 40px;
+  font-weight: 400;
 }
 .section {
   padding-bottom: 150px;
+}
+.section--decor {
+  position: relative;
+}
+.section--decor::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/section-decor.png);
+  width: 22px;
+  height: 30px;
+}
+.section--decor::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  bottom: 13px;
+  background-color: #7b6152;
+  width: 1000%;
+  height: 1px;
+}
+.button {
+  padding: 18px 54px;
+  background: #ffbd59;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }
 .container {
   max-width: 1180px;
@@ -98,8 +127,9 @@ button {
 }
 .top__title {
   font-size: 30px;
-  font-family: 'Yeseva One', serif;
+  font-family: 'Yeseva One', cursive;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 .top__text {
   margin-bottom: 48px;
@@ -140,26 +170,8 @@ button {
   align-items: center;
   gap: 0 20px;
   flex-basis: 930px;
-  position: relative;
 }
-.about__list::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(../images/section-decor.png);
-  width: 22px;
-  height: 30px;
-}
-.about__list::after {
-  content: '';
-  position: absolute;
-  left: 22px;
-  bottom: 13px;
-  background-color: #7b6152;
-  width: 1000%;
-  height: 1px;
-}
+
 .about__item-img {
   margin-bottom: 10px;
 }
@@ -174,6 +186,7 @@ button {
 .section__content-descr {
   display: grid;
   grid-template-columns: auto auto;
+  padding-bottom: 92px;
 }
 .products__content {
   gap: 50px 90px;
@@ -189,16 +202,20 @@ button {
 .products__item-price {
   margin-bottom: 12px;
   font-size: 16px;
-  font-family: 'Yeseva One', serif;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
 }
 .products__item-title {
   margin-bottom: 16px;
   font-size: 16px;
-  font-family: 'Yeseva One', serif;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
 }
 .products__item-text {
   margin-bottom: 27px;
+  font-size: 12px;
 }
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -243,6 +260,13 @@ button {
   }
   .about__list {
     padding-left: 20px;
+  }
+  .section__inner {
+    grid-template-columns: 290px auto;
+    gap: 0 10px;
+  }
+  .products__content {
+    gap: 67px;
   }
 }
 @media (max-width: 900px) {
